@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+
+body {
+  background-image: url(https://funart.pro/uploads/posts/2021-04/thumbs/1618603911_63-funart_pro-p-oboi-fon-temnii-fon-kosmos-64.jpg);
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Tiro Bangla', serif;
+  font-size: 32px;
+  color: white;
+} 
+
+.name {
+  border: 2px solid wheat;
+  padding: 10px;
+  color: black;
+  margin-top: 10px;
+  padding: 30px;
+  text-align: center;
+  
+}
+
+a {
+  font-size: 26px;
+}
+
+p {
+  font-size: 24px;
+  color:darkblue;
+}
+
+/* .nadpis {
+  position: absolute;
+  text-align: center;
+  
+  font-size: 20px;
+  color: lightgoldenrodyellow;
+} */
+
+.white { 
+  background: rgb(76, 187, 218);
+  width: 1000px;
+  min-height: 800px;
+  margin: 30px auto; /*центрирует*/
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid rgb(47, 53, 210);
+ 
+}
+
+.header { 
+  height: 150px;
+  width: 85%;
+  background: url("https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80") no-repeat center center / cover;
+  
+}
+
+.title-block {
+  width: 15%;
+  height: 150px;
+  background: url(images/Фото-картинка.jpg) no-repeat center center / cover;
+
+}
+
+.container1 {
+  display: flex;
+  min-height: 400px;
+  /* Не указали ширину поэтому займет всю ширину род элемента white */
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;      /*центрирует идеально по центру*/
+}
+
+.pic {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.pic:hover {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+}
+
+
+.wrapper {
+  border: 2px solid green;
+  min-height: 300px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 5px;
+}
+
+/* .userpic {
+  display: flex;
+  width: 5%;
+  height: 100%;
+  border: 2px solid blue;
+} */
+
+
+.nav {
+  display: flex;
+  background-color: #1abc9c;
+}
+
+.nav a {
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.nav a:hover {
+  background-color: red;
+  color: black;
+}
+
+.underBulb {
+  font-size: 60%;
+}

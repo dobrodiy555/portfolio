@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>My fucking site</title>
+    <link rel="stylesheet" href="style.css">
+    <!--добавляем ссылку на css файл-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+      /* ::marker { 
+  list-style-type: square;
+  color: red;
+  font-size: 23px; 
+ }                              --установит все маркеры списка в документе в определенном стиле */
+      ul,
+      li {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      div.fixed {
+        position: fixed;
+        bottom: 10px;
+        padding: 5px;
+        background-color: #cae8ca;
+        border: 2px solid #4CAF50;
+      }
+
+      input[type=text] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type=submit] {
+        width: 20%;
+        background-color: greenyellow;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 2px solid grey;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      input[type=reset] {
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: red;
+      }
+
+      input:focus {
+        background-color: yellow;
+        /*подсветит желтым форму при заполнении*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="font-effect-fire">Times of year</h1>
+    <h2><a href="#season1">Winter</a></h2>
+    <h3>Third head</h3>
+    <!-- Это пример комментария -->
+    <p>First paragraph.</p>
+    <br>
+    <ul class="hornav">
+      <li><a class="active1" href="#home1">Home</a></li>
+      <li><a href="#news1">News</a></li>
+      <li><a href="#contact1">Contacts</a></li>
+      <li><a href="about1">About</a></li>
+      <li><a class="dict" href="https://multitran.ru" target="_blank">Dictionary</a>
+      </li>
+      <!--target="_blank"  так ссылка откроется в новой вкладке -->
+    </ul>
+
+    <p class="par1">
+      Lorem ipsum <em>dolor</em> sit amet, consectetur adipiscing elit, <br>
+      sed do <b>adfasdf</b>eiusmod tempor incididunt ut <strong>labore</strong> et dolore magna aliqua. <br>
+      Pellentesque sit amet <i>porttitor</i> eget dolor morbi non arcu risus. <br>
+      Eu ultrices vitae auctor eu augue E=mc<sup>2</sup>.
+    </p>
+    <ul class="a">
+      <li class="cl2"> Winter </li>
+      <li> Spring </li>
+      <li class="sum_li"> Summer </li>
+      <li> Fall </li>
+    </ul>
+
+    <ol start="666">
+      <!-- мы хотим начать список с 666-й позиции -->
+      <li id="ident1"> Cold </li>
+      <!--присваиваем идентификатор чтоб потом задать цвет в файле css-->
+      <li id="ident2"> Wind </li>
+      <li id="ident3"> Heat </li>
+      <li id="ident4"> Rain </li>
+    </ol>
+
+    <ol class="zzz1">
+      <li>Winter
+        <ol class="zzz1ul">
+          <li> December </li>
+          <li> January </li>
+          <li> February </li>
+        </ol>
+      </li>
+      <li>Spring
+        <ol class="zzz1ul">
+          <li> March </li>
+          <li> April </li>
+          <li> May </li>
+        </ol>
+    </ol>
+
+    <ul>
+      <li class="planets">Mercury</li>
+      <li class="planets">Venus</li>
+      <li class="planets">Earth</li>
+      <li class="planets">Mars</li>
+      <li class="planets">Jupiter</li>
+    </ul>
+
+    <ul class="vertnav">
+      <li><a class="active" href="#home">Home</a>
+      <li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contacts</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
+      </div>
+    </div>
+
+    <ul class="navdrop">
+      <li><a href="#home2">Home</a></li>
+      <li><a href="#news2">News</a></li>
+      <li class="dropdown2">
+        <a href="javascript:void(0)" class="dropbtn2">Dictionary</a>
+        <div class="dropdown-content2">
+          <a href="https://www.multitran.com/m.exe?l1=1&l2=2">English-Russian</a>
+          <a href="https://www.multitran.com/m.exe?l1=2&l2=1&fl=1">Russian-English</a>
+        </div>
+      </li>
+    </ul>
+
+
+    <div class="div1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor ncididunt ut labore et dolore magna aliqua.
+      Viverra aliquet eget sit amet tellus cras adipiscing.
+      Tempor commodo ullamcorper a lacus vestibulum sed arcu. </div>
+
+
+    <table border="1">
+      <!--толщина рамки таблицы-->
+      <caption class="cap1">Table of seasons</caption>
+      <thead>
+        <!--необязательные семант.теги таблицы-->
+        <tr>
+          <th> Season </th>
+          <th> Month</th>
+          <th> Feature</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Winter</td>
+          <td>January</td>
+          <td>cold</td>
+        </tr>
+        <tr>
+          <td class="spr">Spring</td>
+          <td>April</td>
+          <td class="wind">wind</td>
+        </tr>
+        <tr>
+          <td class="sum">Summer</td>
+          <td class="sum">July</td>
+          <td class="sum">heat</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td id="ident5">Fall</td>
+          <td>October</td>
+          <td>rain</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="afdiv">
+      <h1 class="af">Authorisation form</h1>
+      <form style="text-align:left;">
+        <span class="spanaf">Name:</span><br>
+        <input type="text" name="firstname" id="firstname" placeholder="Your name.." maxlength="10"><br>
+        Surname:<br>
+        <input type="text" name="lastname" id="lastname"><br>
+        Password:<br>
+        <input type="password" name="password" id="password" required><br>
+        Your email address:<br>
+        <input type="email" name="email"><br>
+        Gender:<br>
+        <input type="radio" name="gender" value="male">Man<br>
+        <input type="radio" name="gender" value="female">Woman<br>
+        <input type="radio" name="gender" value="unknown">Who knows<br>
+        Your age:
+        <input type="number" min="1" max="120"><br>
+        City:<br>
+        <input type="text" name="city1" id="city1" value="Kiev"><br>
+        <p>What is your favorite season?
+          <select name="Season">
+            <option value="1">Winter</option>
+            <option value="2">Spring</option>
+            <option value="3">Summer</option>
+            <option value="4">Fall</option>
+          </select>
+        </p>
+        Your mark: <br>
+        <input type="range" min="0" max="12" step="1" value="12"><br>
+        <p>What is your favorite season?
+          <select name="Season" size="4" multiple>
+            <option value="1">Winter</option>
+            <option value="2">Spring</option>
+            <option value="3" selected="selected" class="sum">Summer</option>
+            <option value="4">Fall</option>
+          </select>
+        </p>
+        What gadgets have you bought in our stores? <br>
+        <input type="checkbox" name="cellphone">Cellphone(s)<br>
+        <input type="checkbox" name="laptop">Laptop(s)<br>
+        <input type="checkbox" name="desktop">Desktop(s)<br>
+        <input type="checkbox" name="laptop">Laptop(s)<br>
+        Your feedback: <br>
+        <textarea rows="5" cols="50"></textarea><br>
+        I agree that all my personal data will be known to everybody in the world<br>
+        <input type="checkbox"><br>
+        <input type="submit">
+        <input type="reset" value="Да ну его нахуй">
+        <!--для submit и reset можно не указывать имя-->
+      </form>
+    </div>
+
+
+    <dl class="sum">
+      <dt id="sumid1"> Summer </dt>
+      <dd class="def">- a season that follows the spring and is charactarized
+        by warm or hot temperature. </dd>
+    </dl>
+
+    <p class="par_aft_def" style="color: red">
+      Lorem ipsum dolor sit <b>amet</b>, consectetur adipiscing elit, <br>
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+      Elit duis <b><i>tristique</b></i> sollicitudin nibh sit amet.<br>
+      Vulputate sapien nec sagittis aliquam.
+    </p>
+    <p class="par_as_art">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+      eiusmod tempor ncididunt ut labore et dolore magna aliqua. <br>
+      Viverra aliquet eget sit amet tellus cras adipiscing. <br>
+      Tempor commodo ullamcorper a lacus vestibulum sed arcu. <br>
+      Eu non diam phasellus vestibulum lorem. <br>
+      Sodales ut etiam sit amet nisl purus in. <br>
+      Nam libero justo laoreet sit amet cursus sit amet dictum. <br>
+      Nisi est sit amet facilisis magna etiam tempor. <br>
+      Sed adipiscing diam donec adipiscing tristique risus nec feugiat.<br>
+      Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. <br>
+      Bibendum ut tristique et egestas quis ipsum suspendisse.<br>
+    </p>
+    <p>
+      <u id="lorips">Lorem ipsum dolor sit amet,</u> consectetur adipiscing elit, <br>
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+      Purus sit <u>amet volutpat</u> consequat mauris nunc congue nisi. <br>
+      Feugiat in fermentum posuere urna nec. Nullam vehicula ipsum a arcu <br>
+      cursus vitae congue mauris rhoncus. Ut porttitor leo a diam sollicitudin <br>
+      tempor id eu.
+    </p>
+    <hr>
+    <p id="season1">
+      <font color="red">Winter</font> is one of the seasons between autumn and <u id="sprid">spring.</u> The most
+      important <br>
+      indication of this season is a stable low temperature (below 0 degrees Celcius <br>
+      in many parts of the <span class="world">world</span>, also there is a high probability of <a id="link2"
+        href="https://en.wikipedia.org/wiki/Snow" target="_blank">snow</a>.
+    </p>
+    <div class="wint2"> Winter is fun. Some people say winter is a bad season because it is cold, but they are wrong.
+    </div>
+
+    <div class="naeb"> If you want to know more about winter in different countries, hover over this text!
+      <p> Хаха, это наебалово, хуй тебе, если хочешь знать больше, гугл в помощь!!! </p>
+    </div>
+
+    <table border="1">
+      <tr>
+        <th colspan="3"> Winter </th>
+      </tr>
+      <tr>
+        <td> December</td>
+        <td>January</td>
+        <td>February</td>
+      </tr>
+    </table>
+    <hr>
+
+    <div class="sprdiv">
+      <p> Spring is the season the follows the winter and is characterized by moderate temperature, frequent rains and
+        winds. </p>
+    </div>
+
+    <table border="1">
+      <tr>
+        <th rowspan="3">Months of spring</th>
+        <td> March </td>
+      </tr>
+      <tr>
+        <td> April </td>
+      </tr>
+      <tr>
+        <td> May </td>
+      </tr>
+    </table>
+
+    <img class="imgves" src="images/vesna.jpg" alt="spring">
+
+    <hr>
+    <div class="container">
+      <img src="images/wintercat.jpg" title="Winter" alt="Cat on the snow" width="520" height="400">
+      <div class="textimg">Cat on the snow</div>
+      <div class="textimg2">Еще одна надпись для тренировки</div>
+    </div>
+
+    <div class="divend"> <img class="imgcat2" src="images/cat on snow2.jpg" alt="Another cat on the snow"
+        style="width:150px;height:100px;"> Cat on the snow
+      has become a very important feature of the world culture. We can encounter it in many fairy tales
+      from different cultures, continents, countries and regions. That is why we can make a conclusion that it was an
+      ancient invention
+      of the old great civilizations to depict a cat on the snow. But what if there was no snow like in ancient Egypt?
+      How could people know about it?
+      Scientists argue on that issue. One common hyphothesis is that this knowledge was brought to them by
+      extraterrestrial civilizations. <br>
+      Therefore, it confirms that ancient civilizations had numerous contacts with aliens as it was documented
+      by many scholars before. Aliens showed many examples of high-tech technologies to humans that helped them advance
+      and survive
+      in difficult conditions. </div>
+
+    <div class="img3">
+      <img src="images/Race_and_ethnicity_2010_Houston.png" width="100" height="110"><br>CSS is fun!
+      <!--еще один способ вписать текст в div-->
+    </div>
+
+    <p class="sometext">
+      This is some <i>text.</i> This is some <i>text.</i> This is some <i>text.</i>
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+    </p>
+
+    <div class="fixed"> I am fixed </div>
+
+    <p>
+      If you still have any questions you can <a href="mailto:andmih666@gmail.com">send us email.</a>
+    </p>
+
+    <ul class="bottomlist">
+      <li>Home</li>
+      <li>About us</li>
+      <li>Our clients</li>
+      <li>Contact us</li>
+    </ul>
+
+  </body>
+
+</html>

@@ -1,0 +1,546 @@
+/* h1 {
+    color: green;    все h1 заголовки станут зелеными
+}
+ol {
+    background-color: lightblue; 
+}
+*/
+a[target="_blank"] {
+    background-color: red;
+}   /*выбор по атрибуту селектора*/
+
+p::first-letter {    /*псевдоэлемент устанавливает большую первую букву для всех абзацей*/
+    color:#ff0000;
+    font-size: xx-large;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;  /*чтоб граница табл была не двойной, а одинарной*/
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;  /*табл будет в центре*/
+}
+
+th { 
+    height: 55px;  /*высота шапки табл*/
+    text-align: left;
+    background-color: darkcyan;
+    color: goldenrod;
+    padding: 10px;
+    border-bottom: darkblue;
+    font-size: 20px;
+}
+
+td {
+    text-align: center; /*центрует текст в ячейках табл*/
+    text-align: left;
+    padding: 10px;
+}
+
+
+ul.a { 
+    list-style-type: square;
+    list-style-position: outside; /*по умолчанию*/
+    margin-left: 20px;
+    color: darkred;
+}
+
+a:link { 
+    color: hotpink;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {   /*цвет в момент когда наводишь мышкой, должно идти после a:link и a:visited*/
+    color: red;
+    text-decoration: underline;
+    /*font-size: 22px; -чтоб при наведении увеличивался размер текста*/ 
+}
+
+a:active {  /*цвет в момент когда кликаешь мышкой*/
+    color: blue;
+    text-decoration: underline; /*должно идти после a:hover*/
+}
+
+#ident1 {
+    color: blue;
+}
+#ident2 {
+    color: red;
+}
+#ident3 {
+    color: green;
+    text-decoration-line: overline;
+    text-decoration-color: grey;
+    text-decoration-thickness: 3px;
+    }
+#ident4 {
+    color: gold;
+} 
+#ident5 {
+    color: orange;
+    text-decoration: underline;
+}
+#sumid1 {
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-decoration-style: double;
+    text-decoration-thickness: auto;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.2em
+}
+
+#sprid {
+    text-decoration: underline red solid;
+    }
+
+#lorips {
+    text-decoration: line-through;
+    text-decoration-color: blue;
+}
+
+dl.sum {    
+    border-style: dashed solid; /*top and bottom, right and left*/
+    border-color: greenyellow red yellow orangered; /*top right bottom left*/
+    padding: 20px 50px 25px 15px;
+}
+
+.sum_li {
+      font: 20px Georgia, serif;
+      color:rgb(225, 234, 50);
+}
+
+.def {
+    font-style: italic;
+    color: darkred; 
+    font-size: 0.9em;
+    
+}
+
+.af { 
+    text-align: center;
+    border-color:DodgerBlue;
+    border-style: solid; /* цельная линия границы */
+    border-width: 10px 20px; /* 10 top and bottom, 20 on the sides */
+    border-radius: 12px; /* заокругленная граница */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: medium;
+    outline-offset: 8px;
+    text-shadow: 2px 2px 5px red;
+  }
+
+.spanaf {
+    color: green;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+.afdiv {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.cap1 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.spr { border: 10px dashed violet;  /* сокращенная запись о границах */
+        outline: black dotted 3px; 
+}
+
+.wind { border-bottom: 10px ridge blue;
+}
+    
+.cl2 {
+    background-color: rgba(102,51,153,0.7); /*чтобы к тексту не применялось свойство opacity фона, нужно писать через rgba*/
+    width: 400px; 
+    height: 20px;
+}
+
+input[type="password"] {   /*выбирает все поля типа пароль в документе*/
+    color: rgb(225, 234, 50); 
+}
+
+input[type="submit"]:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+img + p {            /*выбирает абзац идущий за картинкой*/
+    text-align: center;
+    font-style: oblique;
+    font-weight: normal;
+}
+
+body { 
+    background-image: url(images/Зима.jpg);
+    background-repeat: repeat-x; /*repeat-x -horizontally, y-vertically*/
+    background-attachment: scroll; /*при прокрутке вниз исчезает, fixed-закреплено*/
+    background-position: right top;
+    background-color: aquamarine;
+}
+
+/*
+@media screen and (min-width: 480px) {
+    body {background-color: #04AA6D;}
+}  если экран просмотра больше 480 то фон зеленый
+*/
+
+.container { 
+    margin: 20px 490px 5px; /*top right-left bottom*/
+    position: relative;
+}
+
+.textimg {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;  /*чтоб это сработало нужно обязательно указать width 100%*/
+    font-size: 18px;
+    float: right;
+}
+.textimg2 {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    font-size: 20px;
+    color: lightgoldenrodyellow;
+}
+
+.par_aft_def {
+    text-align: right;
+}
+
+.par_as_art {
+    border: 1px solid black;
+    margin-left: 75%;
+    padding: 10px;
+    width: 350px;
+    height: 360px;
+    text-align: justify;  /*как в газете*/
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1em;
+}
+
+.par1 {
+    text-transform: capitalize;
+    text-indent: 30px; /*отступ первой строки*/
+    letter-spacing: 2px; /*расстояние между буквами*/
+    line-height: 1.2; /*расстояние между строчками*/
+    word-spacing: -1.5px; /*расстояние между словами, если негативное, то меньше стандартного(1)*/
+    /*white-space: nowrap; -чтобы не переносилась строка, появится скролинг*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.zzz1 {
+    font-family: Tahoma, Verdana, sans-serif;
+    color: rgb(199, 71, 199);
+    font-size: 30px;
+    list-style-type: upper-roman; /*большие римские цифры*/
+    margin-left: 20px; 
+}
+
+.zzz1ul {
+    color:rgb(270, 129, 90);
+    font-size: 50%; /*половина от размера шрифта родительского класса*/
+    list-style-type: lower-alpha; /*маленькие a b c*/
+}
+
+.world {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+#link1 {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#link2 {
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 2px solid red;
+    display: inline-block;
+}
+
+.div1 {
+    background-color: coral;
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: auto; 
+    /*margin: auto; - переместит элемент в центр*/
+}
+
+.imgcat2 {
+    float: right;
+}
+
+.divend {
+    padding: 10px;
+    border: 3px solid red;
+/*
+    clear: right;  очищает форматирование float предыдущего элемента
+*/
+}
+
+.divend::after {   /* вписует картинку в div */
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.img3 {
+    float: right;
+    width: 100px;
+    margin: 10px 5px 15px 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.bottomlist {
+    background-color: yellowgreen;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.bottomlist li {
+    display: inline-block;
+    font-size: 19px;
+    padding: 25px;
+} /*получили горизонтально расположенный список благодаря display: inline-block, часто применяется в хедерах и футерах*/
+
+.imgves {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   /*выравнивание картинки по центру*/
+    width: 20%;
+    opacity: 0.4;
+}
+.imgves:hover {
+    opacity: 1.0;     /*при наведении курсора картинка становится непрозрачной*/
+}
+
+.sprdiv {
+    padding: 30px 0;   /*указываем большой padding верх-низ, будет центрировано по вертикали*/
+    border: 3px solid yellow;   
+    text-align: center; /*центрируем по центру, так будет центрировано и по вертикали и по горизонтали*/
+    margin-bottom: 20px;
+}
+
+.wint2 {
+    background-color: aliceblue;
+    color: blue;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.wint2:hover {
+    background-color: aqua;
+}
+
+.naeb {
+    margin-bottom: 10px;
+}
+.naeb p {
+    display: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.naeb:hover p {
+    display: block;
+}   /*при наведение на текст будет выпадающее окно*/
+
+.sometext i:first-child {  /*первый элемент i класса sometext*/
+    color: blue;
+}
+
+.sometext::first-line {      /*псевдоэлемент для первой строки конкретного класса*/
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+#season1::before {  /*псевдоэлемент вставляет смайл перед указанным элементом*/
+    content: url(images/smiley.gif);
+}
+
+.sprdiv::after {    /*псевдоэлемент вставляет смайл после указанного класса*/
+    content: url(images/emoji.gif);
+}
+
+.planets {
+    list-style-type: none;
+    color: green;
+    font-size: 18px;
+}
+
+.planets::before {
+    content: "•"; 
+    color: red;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;   /*если мы хотим сделать маркеры списка другого цвета чем сам список*/
+}     
+
+/*вертикальное навигационное меню*/
+.vertnav {
+    list-style-type: none;
+    margin: 30px;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+.vertnav li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;  /*уберет подчеркивание ссылки*/
+}
+.vertnav li a.active {   /*установит один выделенный зеленым пункт*/
+    background-color: #04AA6D;
+    color: white;
+}
+.vertnav li a:hover:not(.active) {   /*будет хавериться всё кроме активного окна*/
+    background-color: #555;
+    color: white;
+}
+
+/*горизонтальное навигационное меню*/
+.hornav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.hornav li {
+    float: left;
+    border-right:1px solid #bbb; /*устанавливает границы между пунктами меню*/
+}
+.hornav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+}
+.hornav li a:hover {
+    background-color: #111;  /*при наведении будет подсвечиваться более черным*/
+}
+.hornav li a.dict {
+    color: yellow;
+}
+
+/*Dropdown menu*/
+.dropbtn {
+    background-color: green;
+    color: wheat;
+    padding: 23px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer; /*в виде руки*/
+}
+.dropdown {
+    position: relative;  
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.dropdown-content {
+    display: none;  /*чтобы не отображалось*/
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 200%; /*при выпадении менюшка будет в два раза больше кнопки*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*x y blur spread*/
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 21px 22px;
+    text-decoration: none;
+    display: block;   /*так будут выглядеть пункты выпадайки*/
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /*при наведении мышкой на пункты выпадайки*/
+}
+.dropdown:hover .dropdown-content {
+    display: block;  /*при наведениий мышкой меню выпадает*/
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41; /*при наведении мышкой на кнопку меню*/
+}
+
+/*dropdown menu inside navigation bar*/
+.navdrop {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navdrop li {
+    float: left;
+}
+
+.navdrop li a, .dropbtn2 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navdrop li a:hover, .dropdown2:hover .dropbtn2 {
+    background-color: red;
+}
+
+.dropdown2 li {
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 a {
+    color: black !important;
+    padding: 12px 16px !important;
+    text-decoration: none !important;
+    display: block !important;
+    text-align: left !important;
+}   /*????? почему-то не видит эту штуку*/
+
+.dropdown-content2 a:hover {background-color: #f1f1f1;}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+

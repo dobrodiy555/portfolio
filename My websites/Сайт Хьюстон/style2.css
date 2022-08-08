@@ -1,0 +1,91 @@
+/*table {
+    border-collapse: collapse;
+    width: 40%;
+    
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: gainsboro;
+    color: black;
+}
+*/
+/*
+tr:hover {
+    background-color: cadetblue;  /*выделение строк табл при наведении мышкой*/
+
+
+/*
+tr:nth-child(even) {background-color: #f2f2f2;}  /*makes zebra-striped tables*/
+
+table, th, td {
+    border:  1px solid black;
+}
+
+body {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 680px) {
+    body {background-color: antiquewhite;}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+figure {
+    float: right;
+      
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+span {
+    font-style: italic;
+}
+
+div { 
+    margin-top: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+a:link { 
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+a:active {  /*цвет в момент когда кликаешь мышкой*/
+    color: red;
+    text-decoration: underline; /*должно идти после a:hover*/
+}
+/*
+.clearfix {
+    overflow: auto;
+}
+
+*/
