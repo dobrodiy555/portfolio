@@ -37,7 +37,7 @@ p {
 
 .white { 
   background: rgb(76, 187, 218);
-  width: 1000px;
+  max-width: 1000px;
   min-height: 800px;
   margin: 30px auto; /*центрирует*/
 }

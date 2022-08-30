@@ -47,23 +47,22 @@ em {
   display: flex;
   flex-direction: row;
   background-color: #007765;
-  width: 72.2%;
+  width: 1219px;
   min-height: 84px;
-  text-align: center;
   align-items: center;
   justify-content: center;
   position: fixed;
 }
- 
+/*  
 @media screen and (max-width: 980px) {
     .header {
       display: none;
  }
-}
+} */
 
 .logo {
   background: url(images/logoHeader.png);
-  width: 184px;
+  width: 36.31%;
   height: 45px;
   left: 0.04px;
   margin: 20px 452px 19px 55px;
