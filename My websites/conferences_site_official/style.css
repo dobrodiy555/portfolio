@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  margin: 5px;
+  padding: 0;
+}
+
+label {
+  margin-left: 10px;
+}
+
+#datepicker {
+  width: 180px;
+}
+
+#datepicker>span:hover {
+  cursor: pointer;
+}
+
+
+
