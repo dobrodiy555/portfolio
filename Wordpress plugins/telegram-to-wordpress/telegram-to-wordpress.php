@@ -2,7 +2,7 @@
 /*
 Plugin Name: Telegram to WordPress
 Plugin URI: https://your-plugin-url.com
-Description: Fetches posts from Telegram (Andrei Miheev bot) and publishes them on your WordPress website.
+Description: Fetches posts from Telegram (my bot) and publishes them on your WordPress website.
 Version: 1.0.0
 Author: Your Name
 Author URI: https://your-website.com
