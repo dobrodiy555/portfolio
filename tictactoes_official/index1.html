@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background-color: azure;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+
+      button {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      #container {
+        text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="tictoes1.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body onload="checkCookie()">
+    <h1 align=" center">Tic-Tac-Toe</h1>
+    <h3 align="center">My pet project on JS</h3>
+    <form name="game">
+      <table align="center" border="3" bgcolor="#77CB5F">
+        <tbody>
+          <tr>
+            <td>
+              <table border="1">
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="cell" id="1a" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Top-left" />
+                    </td>
+                    <td>
+                      <img class="cell" id="1b" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Top-center" />
+                    </td>
+                    <td>
+                      <img class="cell" id="1c" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Top-right" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="cell" id="2a" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Center-left" />
+                    </td>
+                    <td>
+                      <img class="cell" id="2b" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Center-center" />
+                    </td>
+                    <td>
+                      <img class="cell" id="2c" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Center-right" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="cell" id="3a" src="img/blank.gif" border="0" height="100" width="100" value="3a"
+                        alt="Bottom-left" />
+                    </td>
+                    <td>
+                      <img class="cell" id="3b" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Bottom-center" />
+                    </td>
+                    <td>
+                      <img class="cell" id="3c" src="img/blank.gif" border="0" height="100" width="100"
+                        alt="Bottom-right" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+
+    <div id="container">
+      <p> Result of the game: <span id="result_field"></span> </p>
+
+      <!-- reload the page when clicking button (as if F5) -->
+      <button id="button" onclick="window.location.reload(true)">Play again</button>
+
+      <br><br>
+
+      <table border="0" id="stat_table" align="center">
+        <tr>
+          <td>User victories:</span></td>
+          <td><span id="user_vict_field"></span></td>
+        </tr>
+        <tr>
+          <td>Computer victories:</td>
+          <td><span id="comp_vict_field"></span></td>
+        </tr>
+        <tr>
+          <td>Ties:</td>
+          <td><span id="ties_field"></span></td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      var cell_elements = document.getElementsByClassName(" cell");
+      for (var i = 0; i < cell_elements.length; i++) {
+        cell_elements[i].addEventListener("click", user_move, { once: true });
+        cell_elements[i].addEventListener("click", computer_move, { once: true });
+      }
+    </script>
+
+  </body>
+
+</html>
