@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: login\n"
+"POT-Creation-Date: 2023-04-25 19:32+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Myname <myemail@gmail.com>\n"
+"Language-Team: My Super Team\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: login-plugin.php:10
+msgid "login-plugin"
+msgstr "логин-плагин"
+
+#: login-plugin.php:11
+msgid "creates shortcode which shows login form with some validation"
+msgstr "создает шорткод который показывает форму с валидацией"
+
+#: login-plugin.php:41
+msgid "Login form"
+msgstr "Форма логина"
+
+#: login-plugin.php:46
+msgid "Login"
+msgstr "Логин"
+
+#: login-plugin.php:50
+msgid "Password"
+msgstr "Пароль"
+
+#: login-plugin.php:54
+msgid "Remember Me"
+msgstr "Запомнить меня"
+
+#: login-plugin.php:71
+msgid "Form fields must be filled!"
+msgstr "Нужно заполнить поля формы!"
+
+#: login-plugin.php:94
+msgid "Sorry, we could not find a user with such a login!"
+msgstr "Извините, мы не нашли пользователя с таким логином!"
+
+#: login-plugin.php:155
+msgid "Sorry, you entered the wrong password!"
+msgstr "Извините, Вы ввели неверный пароль!"
+
+#: script.js:16
+msgid "Everything worked well!"
+msgstr "Всё сработало хорошо!"
+
+#: script.js:19
+msgid "error"
+msgstr "ошибка"

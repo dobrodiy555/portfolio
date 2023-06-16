@@ -1,0 +1,47 @@
+/*делаем кнопки больше и увеличиваем расстояние между ними плюс хавер*/
+.btn-success {
+    background-color: #6aa84f !important;
+    /*padding: 18px 32px;*/
+    margin: 3rem;
+    color: black !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    color: black;
+    font-size: 30px;
+    /*font-weight: bold;*/
+}
+
+.btn-danger {
+    margin: 3rem;
+    color: black;
+    font-size: 26px;
+}
+
+.btn-danger:hover {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*центрируем бустрап кнопки да-нет*/
+.modal-footer  {
+    margin: auto;
+}
+
+/*делает шире(выше) тело попапа*/
+.modal-body {
+    padding: 5rem !important;
+}
+
+/*так как бутстрап кнопка large для нас маленькая, сделаем супер большую кнопку*/
+.btn-xlarge {
+    padding: 18px 32px;
+    /*font-size: 22px;*/
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}

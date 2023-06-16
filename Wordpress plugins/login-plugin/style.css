@@ -1,0 +1,33 @@
+span.message-error {
+    display:none;
+
+}
+
+.resp-for-login {
+    color:red;
+}
+
+.resp-for-pass {
+    color:red;
+}
+
+.resp-for-both {
+    color:red;
+}
+
+/*.resp {*/
+/*    color: red;*/
+/*}*/
+
+.warning {
+    /*border-color: red;*/
+    /*border-style: solid;*/
+    border: 2px solid red !important;
+    /*color:red;*/
+    /*просто нужно было переписать точно также как в css темы !*/
+}
+
+#login-pl-submit:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}

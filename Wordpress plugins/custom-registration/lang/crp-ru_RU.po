@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: crp\n"
+"POT-Creation-Date: 2023-05-02 16:46+0300\n"
+"PO-Revision-Date: 2023-05-02 16:48+0300\n"
+"Last-Translator: \n"
+"Language-Team: superteam\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _e;__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: custom-registration.php:10
+msgid "Custom registration plugin"
+msgstr "Плагин произвольной формы регистрации"
+
+#: custom-registration.php:11
+msgid ""
+"Creates shortcode which shows login form with six fields, upon submit "
+"happens ajax validation, creation of user, popup and redirect"
+msgstr ""
+
+#: custom-registration.php:43
+msgid "Custom registration form"
+msgstr "Произвольная форма регистрации"
+
+#: custom-registration.php:45
+msgid "Login:"
+msgstr "Логин:"
+
+#: custom-registration.php:49
+msgid "Name:"
+msgstr "Имя:"
+
+#: custom-registration.php:53
+msgid "Surname:"
+msgstr "Фамилия:"
+
+#: custom-registration.php:57
+msgid "Email:"
+msgstr ""
+
+#: custom-registration.php:61
+msgid "Password:"
+msgstr "Пароль:"
+
+#: custom-registration.php:65
+msgid "Confirm password:"
+msgstr "Подтвердите пароль:"
+
+#: custom-registration.php:95
+msgid "This field must be filled!"
+msgstr "Это поле должно быть заполнено!"
+
+#: custom-registration.php:106
+msgid "Sorry, login is already in use. Try another!"
+msgstr "Простите, такой логин уже используется. Попробуйте другой!"
+
+#: custom-registration.php:116
+msgid "Sorry, your email has a wrong format!"
+msgstr "Простите, у вашей почты неверный формат!"
+
+#: custom-registration.php:125
+msgid "Sorry, email is already in use. Try another!"
+msgstr "Простите, почта уже используется! Попробуйте другую!"
+
+#: script.js:16
+msgid "Thank you for registering on our website!"
+msgstr "Спасибо за регистрацию на нашем вебсайте!"
+
+#: script.js:30
+msgid "error during ajax call!"
+msgstr "ошибка во время аякса!"
+
+#~ msgid "error!"
+#~ msgstr "ошибка!"
+
+#~ msgid "Simple registration form"
+#~ msgstr "Простая форма регистрации"
+
+#~ msgid "Sorry, login is already in use!"
+#~ msgstr "Простите, такой логин уже используется!"

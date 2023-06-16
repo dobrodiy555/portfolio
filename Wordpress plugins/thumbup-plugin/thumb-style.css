@@ -1,0 +1,29 @@
+/*if I want to put it to the center*/
+/*.fa-wrapper {*/
+/*    position: relative;*/
+/*    left: 50%;*/
+/*}*/
+
+.fa {
+    font-size: 30px !important;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*animation: jumping when hover*/
+@keyframes jump {
+    0%   {transform: translate3d(0,0,0);}
+    40%  {transform: translate3d(0,-15%,0);}
+    100% {transform: translate3d(0,-30%,0);}
+}
+.fa.jumping:hover {
+    color: darkblue;
+    animation: jump .4s linear alternate infinite;
+}
+
+/*green when liked*/
+.fa-green {
+ color: green;
+}
+
+

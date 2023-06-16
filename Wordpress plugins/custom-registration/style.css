@@ -1,0 +1,21 @@
+/*подсветка для валидации браузера (поля required и имейл)*/
+/**:required:focus-visible {*/
+/*    border: 1px solid red;*/
+/*    outline:none;*/
+/*    background-color: #ffdddd;*/
+/*}*/
+
+/*.crp-inp:valid {*/
+/*    background-color: #ddffdd !important;*/
+/*    border: 1px solid darkgreen !important;*/
+/*}*/
+
+.afterVal {
+    border: 1px solid red !important;
+    background-color: #ffdddd !important;
+}
+
+#crp-form-submit-btn:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
