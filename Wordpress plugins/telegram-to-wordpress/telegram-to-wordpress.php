@@ -44,7 +44,7 @@ function telegram_to_wordpress_deactivate() {
 
 // Function to fetch posts from Telegram
 function telegram_to_wordpress_fetch_posts() {
-	$bot_token = '6022576570:AAGE1WplFEShxeKgGNafrwRA8JQiqvYOjJM'; // Andrei Miheev bot token
+	$bot_token = '60225766666:AAGE1WplFEShxeKgGNafrwRA8JQiqvYOjJL'; // bot token
 	$url = 'https://api.telegram.org/bot' . $bot_token . '/getUpdates'; // to delete old updates, use add ?offset= last update_id + 1
 	$result = file_get_contents($url);
 	$data = json_decode($result, true);
