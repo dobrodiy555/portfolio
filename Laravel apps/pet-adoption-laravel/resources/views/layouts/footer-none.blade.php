@@ -1,0 +1,1 @@
+{{--empty footer for application-success--}}
