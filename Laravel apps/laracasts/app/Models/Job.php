@@ -10,18 +10,17 @@ class Job extends Model
 {
     use HasFactory;
 
-    protected $table = 'job_listings'; // name of our table
-    //protected $fillable = ['title', 'salary', 'employer_id'];
-    // if u r annoyed with adding fields into protected, u can delete them and write
-    protected $guarded = [];     // protected fillable feature will be disabled
+    protected $table = 'job_listings'; 
+
+    protected $guarded = [];  
 
     public function employer()
     {
-        return $this->belongsTo(Employer::class); // each job has only one employer
+        return $this->belongsTo(Employer::class);
     }
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class, foreignPivotKey: "job_listing_id"); // each job has many tags, each tag has many jobs
+        return $this->belongsToMany(Tag::class, foreignPivotKey: "job_listing_id");
     }
 }

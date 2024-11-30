@@ -10,15 +10,13 @@ class Employer extends Model
 {
     use HasFactory;
 
-		// one employer can have many jobs
     public function jobs()
     {
         return $this->hasMany(Job::class);
     }
 
-		// one user can have only one employer
-		public function user(): BelongsTo
-		{
-			  return $this->belongsTo(User::class);
-		}
+	public function user(): BelongsTo
+	{
+		return $this->belongsTo(User::class);
+	}
 }

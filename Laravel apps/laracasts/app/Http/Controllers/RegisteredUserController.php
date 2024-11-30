@@ -14,7 +14,6 @@ class RegisteredUserController extends Controller
     }
 
 	public function store(  ) {
-		// validate
 		$validatedAttrs = request()->validate([
 			'first_name' => ['required'],
 			'last_name' => ['required'],
@@ -22,14 +21,10 @@ class RegisteredUserController extends Controller
 			'password' => ['required', Password::min(5)->letters()->numbers(), 'confirmed'], // min 5 chars, has letters, numbers, check password_confirmation to match password
 		]);
 
-		// create user
 		$user = User::create($validatedAttrs);
 
-		// log in
 		Auth::login($user);
 
-		// redirect
 		return redirect('/jobs');
-		//dd(request()->all()); // see all params from form
-		}
+	}
 }

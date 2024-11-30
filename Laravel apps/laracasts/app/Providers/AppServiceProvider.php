@@ -25,10 +25,5 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void // after all dependencies have been loaded
     {
         Model::preventLazyLoading();
-        // Paginator::useBootstrapFive();
-
-	      //Gate::define('edit-job', function (User $user, Job $job) {
-		    // return $job->employer->user->is($user);
-	      //}); // you can also put it in JobPolicy, I did it
     }
 }
