@@ -21,7 +21,7 @@ class CustomAuthController extends Controller
             'name' => 'required',
             'password' => 'required',
         ]);
-        // $credentials = $request->only('name', 'password');
+    
         if (Auth::attempt($credentials)) {
             return redirect('/tasks');
         }
@@ -55,14 +55,6 @@ class CustomAuthController extends Controller
             'password' => Hash::make($data['password'])
         ]);
     }
-
-    // public function dashboard()
-    // {
-    //     if (Auth::check()) {
-    //         return view('dashboard');
-    //     }
-    //     return redirect("login")->withSuccess('You are not allowed to access');
-    // }
 
     public function signOut()
     {

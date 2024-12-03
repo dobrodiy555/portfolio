@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void // after all dependencies have been loaded
+    public function boot(): void
     {
         Model::preventLazyLoading();
     }

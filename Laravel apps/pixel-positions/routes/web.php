@@ -19,10 +19,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
 Route::get('/', [JobController::class, 'index']);
 Route::get('/search', SearchController::class); // just one magic __invoke() method of this controller will be called
 Route::get('/tags/{tag:name}', TagController::class); // without {tag:name} would equal to tag:id
@@ -33,7 +29,6 @@ Route::post('/jobs', [JobController::class, 'store'])->middleware('auth');
 Route::patch('/jobs/{job}', [JobController::class, 'update'])->middleware('auth')->can('update', 'job');
 Route::get('/jobs/{job}', [JobController::class, 'show'])->middleware('auth');
 Route::delete('/jobs/{job}', [JobController::class, 'destroy'])->middleware('auth');
-
 
 
 // Auth

@@ -11,10 +11,10 @@ class Task extends Model
 {
     use HasFactory;
     protected $table = 'tasks';
-    protected $guarded = [];     // protected fillable feature will be disabled
+    protected $guarded = [];
 
     public function user()
     {
-        return $this->belongsTo(User::class); // each task has only one user
+        return $this->belongsTo(User::class); 
     }
 }

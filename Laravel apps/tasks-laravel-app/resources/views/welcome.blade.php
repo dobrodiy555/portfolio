@@ -6,7 +6,6 @@
             Tasks Laravel App
         </div>
 
-        <!-- Add the registration button here -->
         @guest
             <div class="mt-4">
                 <a href="/login" class="btn">Login</a>

@@ -12,7 +12,6 @@
                 HOME PAGE
             </div>
 
-            <!-- Add the registration button here -->
             @guest
                 <div class="mt-4">
                     <a href="{{ route('login') }}" class="btn">Login</a>

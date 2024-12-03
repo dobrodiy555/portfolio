@@ -41,7 +41,7 @@ class PetController extends Controller
         $validatedAttrs = $request->validated();
 				$validatedAttrs['featured'] = $request->has('featured');
 				$validatedAttrs['user_id'] = auth()->id();
-		    // Handle the file upload properly
+		
 		    if ($request->hasFile('photo')) {
 			    $photoPath = $request->file('photo')->store('photos');
 			    $validatedAttrs['photo'] = $photoPath;

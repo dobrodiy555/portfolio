@@ -20,11 +20,6 @@ class TaskController extends Controller
         ]);
     }
 
-    // public function create()
-    // {
-    //     return view('tasks.create');
-    // }
-
     /**
      * Store a newly created resource in storage.
      */

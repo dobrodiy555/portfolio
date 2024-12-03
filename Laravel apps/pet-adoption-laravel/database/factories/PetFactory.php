@@ -20,8 +20,8 @@ class PetFactory extends Factory
     public function definition(): array
     {
         return [
-					'user_id' => User::factory(),
-					'type' => fake()->randomElement(['dog', 'cat']),
+			'user_id' => User::factory(),
+			'type' => fake()->randomElement(['dog', 'cat']),
 	        'name' => fake()->name(),
 	        'age' => fake()->numberBetween(1, 25),
 	        'breed' => fake()->randomElement(['Siamese', 'Persian', 'Tabby', 'Shepherd', 'Beagle', 'Boxer', 'Pug']),
