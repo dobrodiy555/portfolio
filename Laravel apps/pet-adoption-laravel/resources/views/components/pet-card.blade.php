@@ -8,7 +8,8 @@
     <a href="/adopt" class="adopt-btn">Adopt Me</a>
 
     @can('delete', $pet)
-      <x-delete-form :$pet />
+      {{--<x-delete-form :$pet />--}}
+        <x-delete-form :item="$pet" type="pet" />
     @endcan
 
 </div>

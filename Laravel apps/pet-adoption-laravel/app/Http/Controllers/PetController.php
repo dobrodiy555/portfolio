@@ -9,7 +9,7 @@ use App\Http\Requests\UpdatePetRequest;
 class PetController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display pets for home page
      */
     public function index()
     {
@@ -18,6 +18,9 @@ class PetController extends Controller
 			return view('home', ['featuredPets' => $featuredPets]);
 		}
 
+	/**
+	 * Display pets for browse-pets page
+	 */
 		public function browse() {
 			 $cats = Pet::where('type', 'cat')->get();
 			 $dogs = Pet::where('type', 'dog')->get();
@@ -39,17 +42,17 @@ class PetController extends Controller
     public function store(StorePetRequest $request)
     {
         $validatedAttrs = $request->validated();
-				$validatedAttrs['featured'] = $request->has('featured');
-				$validatedAttrs['user_id'] = auth()->id();
+		$validatedAttrs['featured'] = $request->has('featured');
+		$validatedAttrs['user_id'] = auth()->id();
 		
-		    if ($request->hasFile('photo')) {
-			    $photoPath = $request->file('photo')->store('photos');
-			    $validatedAttrs['photo'] = $photoPath;
-		    } else {
-			    return back()->withErrors(['photo' => 'Photo upload failed']);
-		    }
-				Pet::create($validatedAttrs);
-				return redirect('application-success');
+	    if ($request->hasFile('photo')) {
+		    $photoPath = $request->file('photo')->store('photos');
+		    $validatedAttrs['photo'] = $photoPath;
+	    } else {
+		    return back()->withErrors(['photo' => 'Photo upload failed']);
+	    }
+		Pet::create($validatedAttrs);
+		return redirect('application-success');
     }
 
     /**
@@ -58,6 +61,6 @@ class PetController extends Controller
     public function destroy(Pet $pet)
     {
 	    $pet->delete();
-			return redirect('/browse-pets'); // not view() !!!
+		return redirect('/browse-pets'); // not view() !!!
     }
 }

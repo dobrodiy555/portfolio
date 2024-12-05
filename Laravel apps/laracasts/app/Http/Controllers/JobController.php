@@ -33,12 +33,15 @@ class JobController extends Controller
 			'salary' => 'required|numeric|min:1000|max:1000000',
 			'employer_id' => 'required|Integer|exists:employers,id' 
 		]); 
+		
 		$job = Job::create([
 			'title' => request('title'),
 			'salary' => request('salary'),
 			'employer_id' => request('employer_id')
 		]);
-		Mail::to($job->employer->user)->queue(new JobPosted($job)); //
+		
+		Mail::to($job->employer->user)->queue(new JobPosted($job)); 
+		
 		return redirect('/jobs');
 	}
 

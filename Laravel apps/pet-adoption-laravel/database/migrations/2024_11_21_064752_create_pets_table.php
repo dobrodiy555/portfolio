@@ -14,14 +14,14 @@ return new class extends Migration
     {
         Schema::create('pets', function (Blueprint $table) {
 	        $table->id();
-			$table->foreignIdFor(User::class);
+					$table->foreignIdFor(User::class);
 	        $table->string('type'); // cat or dog
 	        $table->string('name');
 	        $table->unsignedTinyInteger('age');
 	        $table->string('breed');
 	        $table->string('gender');
 	        $table->boolean('featured');
-			$table->string('photo');
+					$table->string('photo');
         });
     }
 

@@ -20,14 +20,14 @@ class PetFactory extends Factory
     public function definition(): array
     {
         return [
-			'user_id' => User::factory(),
-			'type' => fake()->randomElement(['dog', 'cat']),
-	        'name' => fake()->name(),
-	        'age' => fake()->numberBetween(1, 25),
-	        'breed' => fake()->randomElement(['Siamese', 'Persian', 'Tabby', 'Shepherd', 'Beagle', 'Boxer', 'Pug']),
-	        'gender' => fake()->randomElement(['Male', 'Female']),
-	        'featured' => fake()->boolean(),
-	        'photo' => fake()->imageUrl(),
+            'user_id' => User::factory(),
+            'type' => fake()->randomElement(['dog', 'cat']),
+            'name' => fake()->name(),
+            'age' => fake()->numberBetween(1, 25),
+            'breed' => fake()->randomElement(['Siamese', 'Persian', 'Tabby', 'Shepherd', 'Beagle', 'Boxer', 'Pug']),
+            'gender' => fake()->randomElement(['Male', 'Female']),
+            'featured' => fake()->boolean(),
+            'photo' => fake()->randomElement(['photos/australian.png', 'photos/boxer.png', 'photos/kitten-puppy.jpg', 'photos/orange-cat.png']),
         ];
     }
 }

@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class VolunteeringApplicationData extends Model
 {
     use HasFactory;
-	  public $timestamps = false;
+	public $timestamps = false;
 }

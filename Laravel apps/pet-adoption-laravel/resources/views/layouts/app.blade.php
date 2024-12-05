@@ -21,12 +21,11 @@
 
 
 @if (\Illuminate\Support\Facades\View::hasSection('header1'))
-
     <body style="background-color: wheat;">
-    @else
-
-        <body style="background-color: rgb(251, 245, 235);">
+@else
+     <body style="background-color: rgb(251, 245, 235);">
 @endif
+
 @yield('content')
 </body>
 

@@ -26,6 +26,10 @@
                         <li><button class="logout-button">Log Out</button></li>
                     </form>
                 @endguest
+                @if (auth()->check() && auth()->user()->is_admin)
+                    <li><a href="/admin">Admin</a></li>
+                @endif
+
             </ul>
         </nav>
     </div>
