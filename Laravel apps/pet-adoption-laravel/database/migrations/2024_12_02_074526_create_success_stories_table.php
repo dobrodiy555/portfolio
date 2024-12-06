@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('success_stories', function (Blueprint $table) {
           $table->id();
-	        $table->string('title');
-					$table->string('description');
-	        $table->text('text');
-	        $table->string('photo');
-	        $table->timestamps();
+	      $table->string('title');
+		  $table->string('description');
+	      $table->text('text');
+	      $table->string('photo');
+	      $table->timestamps();
         });
     }
 

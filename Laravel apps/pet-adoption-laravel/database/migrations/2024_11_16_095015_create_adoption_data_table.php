@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
 		        $table->string('name');
 		        $table->string('email')->unique();
-						$table->string('phone');
-						$table->string('address');
+				$table->string('phone');
+				$table->string('address');
 		        $table->string('pet_type');
-						$table->text('reason');
-	          $table->timestamp('submission_date')->useCurrent();
+				$table->text('reason');
+	            $table->timestamp('submission_date')->useCurrent();
 
         });
     }

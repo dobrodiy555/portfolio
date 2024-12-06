@@ -31,7 +31,6 @@
 
 <script src="js/main.js"></script>
 
-
 @if (\Illuminate\Support\Facades\View::hasSection('footer1'))
     @include('layouts.footer1')
 @elseif(\Illuminate\Support\Facades\View::hasSection('footer-none'))
@@ -39,7 +38,5 @@
 @else
     @include('layouts.footer')
 @endif
-
-{{-- footer is different for auth --}}
 
 </html>

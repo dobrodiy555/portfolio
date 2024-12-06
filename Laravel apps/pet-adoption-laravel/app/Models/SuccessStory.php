@@ -18,7 +18,7 @@ class SuccessStory extends Model
  	{
 		return new Attribute(
 			get: fn () => [
-				'topic' => 'cats',
+				'topic' => 'pets',
 				'author' => 'anonym',
 			]
 		);

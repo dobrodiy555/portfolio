@@ -11,12 +11,12 @@ use Tests\TestCase;
 
 class PetTest extends TestCase
 {
-	 use RefreshDatabase;
+	use RefreshDatabase;
 
-	 public function test_that_one_pet_can_be_created(): void {
-			$pet = Pet::factory()->create();
-		  $this->assertModelExists($pet);
-		}
+	public function test_that_one_pet_can_be_created(): void {
+	  	$pet = Pet::factory()->create();
+	  	$this->assertModelExists($pet);
+	}
 
 	public function test_that_multiple_pets_can_be_created(): void {
 		$number_of_pets_before = DB::table('pets')->count();
@@ -26,11 +26,10 @@ class PetTest extends TestCase
 	}
 
 	 public function test_that_pet_belongs_to_user(): void {
-			$user = User::factory()->create();
-			$pet = Pet::factory()->create(
-				['user_id' => $user->id]
-			);
-			$this->assertTrue($pet->user->is($user));
-
+		$user = User::factory()->create();
+    	$pet = Pet::factory()->create(
+			['user_id' => $user->id]
+		);
+		$this->assertTrue($pet->user->is($user));
 	}
 }

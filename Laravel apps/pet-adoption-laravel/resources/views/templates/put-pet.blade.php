@@ -14,10 +14,10 @@
 
 @section('content')
     <main>
-        <div>
-            <section class="signup-section">
-    <h2>Put Pet Application</h2>
-    <form action="/put-pet" method="post" enctype="multipart/form-data">
+    <div>
+    <section class="signup-section">
+        <h2>Put Pet Application</h2>
+        <form action="/put-pet" method="post" enctype="multipart/form-data">
         @csrf
 
             <label for="type">Type of Pet</label>
@@ -52,8 +52,8 @@
         </div>
          <x-form-error name="featured" />
 
-            <label for="photo">Photo</label>
-            <input type="file" id="photo" name="photo" required>
+        <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo" required>
         <x-form-error name="photo" />
 
         <button type="submit" class="btn">Submit Application</button>

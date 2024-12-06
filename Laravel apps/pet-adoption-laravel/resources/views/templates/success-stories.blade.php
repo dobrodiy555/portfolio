@@ -36,9 +36,9 @@
 
             @auth
                 @if (auth()->user()->is_admin)
-                <a href="/success-stories-add">
-                    <button style="margin: 0 auto;">Add Success Story</button>
-                </a>
+                    <a href="/success-stories-add">
+                        <button style="margin: 0 auto;">Add Success Story</button>
+                    </a>
                 @endif
             @endauth
         </section>

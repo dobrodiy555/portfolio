@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        //$this->call(UserSeeder::class); // PetSeeder will create users
         $this->call(AdoptionDataSeeder::class);
         $this->call(VetBookingDataSeeder::class);
         $this->call(VolunteeringApplicationDataSeeder::class);

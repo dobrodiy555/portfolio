@@ -7,5 +7,4 @@
     @can('delete', $pet)
         <x-delete-form :item="$pet" type="pet" />
     @endcan
-
 </div>

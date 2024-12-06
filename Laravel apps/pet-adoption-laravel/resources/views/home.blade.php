@@ -24,8 +24,6 @@
             </div>
         </section>
 
-        {{--<h1 style="text-align: center;">{{ __('messages.welcome') }}</h1>--}}
-
         <section class="featured-pets">
             <h2>Featured Pets</h2>
             <div class="pet-cards">

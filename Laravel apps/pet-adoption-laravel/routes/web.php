@@ -35,7 +35,7 @@ Route::post('/logout', [SessionController::class, 'destroy'])->middleware('auth'
 Route::get('browse-pets', [PetController::class, 'browse']);
 Route::get('/put-pet', [PetController::class, 'create'])->middleware('auth');
 Route::post('/put-pet', [PetController::class, 'store'])->middleware('auth');
-Route::delete('/browse-pets/{pet}', [PetController::class, 'destroy'])->middleware('auth'); // should be {pet} not {id} !!!
+Route::delete('/browse-pets/{pet}', [PetController::class, 'destroy'])->middleware('auth'); 
 
 // success stories
 Route::get('/success-stories', [SuccessStoryController::class, 'index']);
@@ -44,18 +44,18 @@ Route::controller(SuccessStoryController::class)
      ->group(function () {
 	     Route::get('/success-stories-add', 'create');
 	     Route::post('/success-stories-add', 'store');
-	     Route::delete('/success-stories/{successStory}', 'destroy'); // should be {successStory}, the same name as model
+	     Route::delete('/success-stories/{successStory}', 'destroy'); 
 });
 
 
-// to practise Resources
+// API Resources
 Route::get('/story/{id}', function (string $id) {
 	return new \App\Http\Resources\SuccessStoryResource(SuccessStory::findOrFail($id));
 });
 Route::get('/stories', function() {
 	return new \App\Http\Resources\SuccessStoryCollection(SuccessStory::all());
 });
-//Route::get('/api/stories', fn() => SuccessStory::all());
+
 
 // different pages
 Route::get('adopt', function () {

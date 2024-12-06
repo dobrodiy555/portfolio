@@ -13,7 +13,7 @@ class User extends Authenticatable
 {
     use CrudTrait;
     use HasApiTokens, HasFactory, Notifiable;
-	public $timestamps = false; // !!! if u don't have standard timestamps() in db
+	public $timestamps = false; 
 
 	public function pets() {
 		return $this->hasMany(Pet::class);

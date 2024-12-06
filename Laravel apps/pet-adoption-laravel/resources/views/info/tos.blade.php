@@ -4,7 +4,6 @@
     {{ 'Terms of Service' }}
 @endsection
 
-
 @section('content')
     <main>
         <div class="content-wrapper">

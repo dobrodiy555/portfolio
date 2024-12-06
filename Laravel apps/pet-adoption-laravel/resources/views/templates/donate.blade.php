@@ -4,7 +4,6 @@
     {{ 'Donate' }}
 @endsection
 
-
 @section('content')
     <main class="donate-main">
         <section class="donate-section">

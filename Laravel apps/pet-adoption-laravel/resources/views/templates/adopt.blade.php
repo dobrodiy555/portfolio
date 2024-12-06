@@ -20,7 +20,6 @@
             <h1>Adopt a Pet</h1>
             <p>Give a loving home to a furry companion and change a life forever.</p>
 
-
             <div class="adopt-steps">
                 <div class="step">
                     <img src="images/browse.png" alt="Browse Icon">

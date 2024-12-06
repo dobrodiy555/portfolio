@@ -4,7 +4,6 @@
     {{ 'Pet-care' }}
 @endsection
 
-
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/pet-care-styles.css') }}">
     <style>
