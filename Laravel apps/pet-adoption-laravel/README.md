@@ -23,7 +23,7 @@ _npm install_
 
 then:
 
-npm run dev
+_npm run dev_
 
 or
 
