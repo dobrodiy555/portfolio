@@ -31,18 +31,20 @@ or
 _npm run build_
 
 Create a .env File: Laravel uses a .env file to store environment-specific configurations. Copy the example .env file:
-cp .env.example .env
+
+_cp .env.example .env_
 
 or
 
-manually rename your .env.example to .env
+manually rename your _.env.example_ to _.env_
 
 then change the db name and configurations in .env file or create a database in your phpmyadmin according to this name:
 
-DB_DATABASE=mydbname
+_DB_DATABASE=mydbname_
 
 Then, generate an application key:
-php artisan key:generate
+
+_php artisan key:generate_
 
 Configure the Database: Open the .env file and configure your database connection settings, including DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD. Save the changes.
 
@@ -50,7 +52,7 @@ Run Migrations : If the project uses a database, run migrations to create the ne
 
 _php artisan migrate_
 
-(if needed)Seeders: You can also seed the database with initial data (if there are seeders defined):
+(if needed) Seeders: You can also seed the database with initial data (if there are seeders defined):
 
 _php artisan db:seed_
 
