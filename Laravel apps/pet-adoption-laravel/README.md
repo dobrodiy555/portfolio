@@ -3,7 +3,8 @@ This is my Laravel project - website for registering and viewing pets for adopti
 To run it, make sure you have Git and Composer installed on your system before proceeding:
 
 Clone the Git Repository: Navigate to the directory where you want to store your Laravel project and run the following command to clone the Git repository:
-git clone <repository_url>
+
+_git clone <repository_url>_
 
 Replace <repository_url> with the URL of the Git repository.
 
