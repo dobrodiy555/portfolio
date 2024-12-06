@@ -9,17 +9,17 @@ Replace <repository_url> with the URL of the Git repository.
 
 Change Directory: Change your working directory to the newly cloned project:
 
-cd <project_directory>
+_cd <project_directory>_
 
 Replace <project_directory> with the name of your project folder.
 
 Install Dependencies: Laravel projects require various dependencies. Use Composer to install them:
 
-composer install
+_composer install_
 
 If your project uses any packages that uses the npm libraries (like Laravel Breeze for authentication) then you should also run:
 
-npm install
+_npm install_
 
 then:
 
@@ -27,7 +27,7 @@ npm run dev
 
 or
 
-npm run build
+_npm run build_
 
 Create a .env File: Laravel uses a .env file to store environment-specific configurations. Copy the example .env file:
 cp .env.example .env
@@ -47,14 +47,15 @@ Configure the Database: Open the .env file and configure your database connectio
 
 Run Migrations : If the project uses a database, run migrations to create the necessary database tables:
 
-php artisan migrate
+_php artisan migrate_
 
 (if needed)Seeders: You can also seed the database with initial data (if there are seeders defined):
 
-php artisan db:seed
+_php artisan db:seed_
 
 Start the Development Server: Run the built-in Laravel development server:
-php artisan serve
+
+_php artisan serve_
 
 By default, the server will run on http://localhost:8000.
 
