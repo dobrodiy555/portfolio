@@ -20,8 +20,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [JobController::class, 'index']);
-Route::get('/search', SearchController::class); // just one magic __invoke() method of this controller will be called
-Route::get('/tags/{tag:name}', TagController::class); // without {tag:name} would equal to tag:id
+Route::get('/search', SearchController::class); 
+Route::get('/tags/{tag:name}', TagController::class); 
 
 // jobs
 Route::get('/jobs/create', [JobController::class, 'create'])->middleware('auth');

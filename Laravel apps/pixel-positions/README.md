@@ -1,64 +1,64 @@
-This is my Laravel project.
+This is my Laravel project - website for employers to register their jobs and for users to look for jobs.
 
 To run it, make sure you have Git and Composer installed on your system before proceeding:
 
-1. Clone the Git Repository: Navigate to the directory where you want to store your Laravel project and run the following command to clone the Git repository:
+Clone the Git Repository: Navigate to the directory where you want to store your Laravel project and run the following command to clone the Git repository:
 
-git clone <repository_url>
+_git clone <repository_url>_
 
 Replace <repository_url> with the URL of the Git repository.
 
 Change Directory: Change your working directory to the newly cloned project:
 
-cd <project_directory>
+_cd <project_directory>_
 
 Replace <project_directory> with the name of your project folder.
 
 Install Dependencies: Laravel projects require various dependencies. Use Composer to install them:
 
-composer install
+_composer install_
 
 If your project uses any packages that uses the npm libraries (like Laravel Breeze for authentication) then you should also run:
 
-npm install 
+_npm install_
 
 then:
 
-npm run dev
+_npm run dev_
 
 or
 
-npm run build
+_npm run build_
 
-3. Create a .env File: Laravel uses a .env file to store environment-specific configurations. Copy the example .env file:
+Create a .env File: Laravel uses a .env file to store environment-specific configurations. Copy the example .env file:
 
-cp .env.example .env
+_cp .env.example .env_
 
 or
 
-manually rename your .env.example to .env
+manually rename your _.env.example_ to _.env_
 
 then change the db name and configurations in .env file or create a database in your phpmyadmin according to this name:
 
-DB_DATABASE=mydbname
+_DB_DATABASE=mydbname_
 
-4. Then, generate an application key:
+Then, generate an application key:
 
-php artisan key:generate
+_php artisan key:generate_
 
-5. Configure the Database: Open the .env file and configure your database connection settings, including DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD. Save the changes.
+Configure the Database: Open the .env file and configure your database connection settings, including DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD. Save the changes.
 
-6. Run Migrations : If the project uses a database, run migrations to create the necessary database tables:
+Run Migrations : If the project uses a database, run migrations to create the necessary database tables:
 
-php artisan migrate
+_php artisan migrate_
 
-(if needed)Seeders: You can also seed the database with initial data (if there are seeders defined):
+(if needed) Seeders: You can also seed the database with initial data (if there are seeders defined):
 
-php artisan db:seed
+_php artisan db:seed_
 
-7. Start the Development Server: Run the built-in Laravel development server:
+Start the Development Server: Run the built-in Laravel development server:
 
-php artisan serve
+_php artisan serve_
 
 By default, the server will run on http://localhost:8000.
 

@@ -2,7 +2,6 @@
 
 <x-panel class="flex gap-x-6">
     <div>
-        {{--<img src="http://placehold.it/90/90" alt="" class="rounded-xl">--}}
         <x-employer-logo :employer="$job->employer"/>
     </div>
 
@@ -17,13 +16,12 @@
     <div class="flex flex-wrap gap-2 items-start">
         @foreach($job->tags as $tag)
             <x-tag :$tag />
-            {{--<x-tag size="small">Manager</x-tag>--}}
         @endforeach
 
         @can('update', $job)
-                <a href="/jobs/{{ $job->id }}">
-                    <x-edit-button>Edit Job</x-edit-button>
-                </a>
+            <a href="/jobs/{{ $job->id }}">
+                <x-edit-button>Edit Job</x-edit-button>
+            </a>
         @endcan
 
     </div>

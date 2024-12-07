@@ -25,7 +25,9 @@ class CustomAuthController extends Controller
         if (Auth::attempt($credentials)) {
             return redirect('/tasks');
         }
+
         $validator['namePassword'] = 'Name or password is incorrect.';
+        
         return redirect("login")->withErrors($validator);
     }
 

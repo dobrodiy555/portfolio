@@ -17,12 +17,13 @@ class JobSeeder extends Seeder
     {
 		$tags = Tag::factory(3)->create();
       
+       // create 10 tags with featured false, 10 with featured true
 	    Job::factory(20)->hasAttached($tags)->create(new Sequence([
 			'featured' => false,
 			'schedule' => 'Full Time'
 		    ], [
 		    'featured' => true,
 		    'schedule' => 'Part Time'
-	    ])); // 10 with featured false, 10 with featured true
+	    ])); 
     }
 }

@@ -14,22 +14,19 @@
         <div>
             @foreach($job->tags as $tag)
                 <x-tag :$tag size="small" />
-             {{--<x-tag size="small">Frontend</x-tag>--}}
             @endforeach
         </div>
 
-        {{--<img src="http://placehold.it/42/42" alt="" class="rounded-xl">--}}
         <div>
             <x-employer-logo :employer="$job->employer" :width="42" />
         </div>
 
         <div>
-         @can('update', $job)
+        @can('update', $job)
             <a href="/jobs/{{ $job->id }}">
-                {{--<x-employer-logo :employer="$job->employer" :width="42" />--}}
                 <x-edit-button size="small">Edit Job</x-edit-button>
             </a>
-          @endcan
+        @endcan
         </div>
 
     </div>

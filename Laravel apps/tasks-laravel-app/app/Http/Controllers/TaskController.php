@@ -14,7 +14,7 @@ class TaskController extends Controller
     public function index()
     {
         $user_id = auth()->id();
-        $tasks = Task::where('user_id', $user_id)->latest()->get(); // latest() or oldest()
+        $tasks = Task::where('user_id', $user_id)->latest()->get(); 
         return view('tasks', [
             'tasks' => $tasks
         ]);
@@ -32,7 +32,7 @@ class TaskController extends Controller
             'body' => request('body'),
             'user_id' => auth()->id(),
         ]);
-        return redirect('/tasks'); // перенаправить на главную стр-цу
+        return redirect('/tasks');
     }
 
     /**

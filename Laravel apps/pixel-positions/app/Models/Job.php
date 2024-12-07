@@ -9,28 +9,26 @@ class Job extends Model
 {
     use HasFactory;
 
-		public function tag(string $name) {
-			$tag = Tag::firstOrCreate(['name' => $name]); // give first record with such name or create it
-			$this->tags()->attach($tag); // attach to pivot table
-		}
+	public function tag(string $name) {
+		$tag = Tag::firstOrCreate(['name' => $name]);
+		$this->tags()->attach($tag); 
+	}
 
-	  public function removeFreeTag(string $name)
-	  {
-		   $tag = Tag::where('name', $name)->first();
-		   if ($tag) {
-			   // Check if the tag is still associated with other jobs
-			   if ($tag->jobs()->count() === 0) {
-				   // Delete the tag itself from the Tags table if no other jobs are associated
-				   $tag->delete();
-			   }
-		   }
-	  }
+    public function removeFreeTag(string $name)
+	{
+	   $tag = Tag::where('name', $name)->first();
+	   if ($tag) {
+		   if ($tag->jobs()->count() === 0) {
+			   $tag->delete();
+ 	   	   }
+   		}
+	}
 
   	public function tags() {
-			return $this->belongsToMany(Tag::class);
-		}
+		return $this->belongsToMany(Tag::class);
+	}
 
-		public function employer() {
-			return $this->belongsTo(Employer::class);
-	 }
+	public function employer() {
+		return $this->belongsTo(Employer::class);
+	}
 }

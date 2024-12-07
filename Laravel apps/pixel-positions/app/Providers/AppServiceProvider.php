@@ -20,6 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-			 Model::unguard(); // to allow mass assignment for all models
+			 Model::unguard();
     }
 }

@@ -88,7 +88,6 @@ class JobController extends Controller
             'tags' => ['nullable'],
         ]);
 
-        // Update the job
         $job->update([
             'title' => request('title'),
             'salary' => request('salary'),
@@ -98,17 +97,14 @@ class JobController extends Controller
             'featured' => request('featured') ? 1 : 0,
         ]);
 
-        // Prepare tags for synchronization
         $tags = [];
         if ($attrs['tags']) {
             foreach (explode(',', $attrs['tags']) as $tag) {
-                $tag = trim($tag); // Trim spaces
+                $tag = trim($tag); 
                 $tags[] = Tag::firstOrCreate(['name' => $tag])->id;
             }
         }
-        // Sync the tags, adding new ones and removing those not in the list
-        $job->tags()->sync($tags); // makes attach() and detach()
-        // delete unused tag from db (otherwise will be in tags list)
+        $job->tags()->sync($tags);
         $existingTags = Tag::all();
         foreach ($existingTags as $existingTag) {
             $job->removeFreeTag($existingTag->name);
