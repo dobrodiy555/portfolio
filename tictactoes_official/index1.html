@@ -113,10 +113,23 @@
     </div>
 
     <script>
+      let game_counter = getCookie("gameCounter") ? getCookie("gameCounter") : 1;
+      console.log("game_counter: ", game_counter);
       var cell_elements = document.getElementsByClassName(" cell");
-      for (var i = 0; i < cell_elements.length; i++) {
-        cell_elements[i].addEventListener("click", user_move, { once: true });
-        cell_elements[i].addEventListener("click", computer_move, { once: true });
+      if (game_counter & 2 != 0) {
+        for (var i = 0; i < cell_elements.length; i++) {
+          cell_elements[i].addEventListener("click", user_move, { once: true });
+          cell_elements[i].addEventListener("click", computer_move, { once: true });
+        }
+      } else {
+        computer_move();
+        for (var i = 0; i < cell_elements.length; i++) {
+          if (cell_elements[i].getAttribute('src') === 'img/o.gif') {
+            continue;
+          }
+          cell_elements[i].addEventListener("click", user_move, { once: true });
+          cell_elements[i].addEventListener("click", computer_move, { once: true });
+        }
       }
     </script>
 
