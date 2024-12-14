@@ -125,7 +125,7 @@ body {
 .long-story-card {
     display: flex;
     margin: auto;
-    width: 1200px;
+    max-width: 1200px;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -140,6 +140,12 @@ body {
     justify-content: center;
     width: auto;
     height: 550px;
+}
+
+@media (max-width: 800px) {
+    .long-story-card img {
+        display: none;
+    }
 }
 
 .long-story-content {

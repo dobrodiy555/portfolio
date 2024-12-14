@@ -10,7 +10,7 @@
 				<li><a class="link" href="tos">Terms of Use</a></li>
 			</ul>
 		</section>
-		<section class="footer-links">
+		<section class="footer-links links-partners">
 			<p id="xname">Partners</p>
 			<ul>
 				<li><a class="link" href="https://bestfriends.org/">Best Friends Animal Society</a></li>
