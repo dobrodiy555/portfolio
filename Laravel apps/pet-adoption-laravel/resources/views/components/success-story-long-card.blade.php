@@ -9,7 +9,7 @@
         @endforeach
     </div>
     <img src="{{ asset('storage/' . $story->photo) }}" alt="{{ $story->title }}">
-    @if (auth()->user()->is_admin)
+    @if (auth()->check() && auth()->user()->is_admin)
         <x-delete-form :item="$story" type="story" />
     @endif
 </div>
